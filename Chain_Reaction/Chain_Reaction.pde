@@ -1,3 +1,11 @@
+/*
+Yuyang Zhang & Michael Ruvinshteyn
+APCS2 pd01
+HW40 -- All That Bouncin’
+2017-05-14
+*/
+
+
 float spring = 0.05;
 float friction = -0.9;
 Ball[] balls = new Ball[25];
@@ -44,4 +52,15 @@ void draw() {
     }
     ball.display();
   }
+}
+
+/*
+void mouseClicked(){
+  for(int x = 0; x < balls.length; x+= 1){
+    int newRad = balls[x].getRad();
+    while(newRad > 0){
+      balls[x].setRad(newRad -= 1);
+    }
+  }
+  */
 }
